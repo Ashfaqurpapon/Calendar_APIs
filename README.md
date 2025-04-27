@@ -90,20 +90,6 @@ const mockUsers = [
 
 ✅ Switch between `mockUsers[0]` (user) or `mockUsers[1]` (admin) inside `mockAuth` middleware.
 
-## ⚙️ Important Logic
-
-- **thisEvent**:
-  - Only update/delete the single selected event.
-  - Cannot modify if the event has already ended.
-
-- **thisAndFollowing**:
-  - Update/delete current event + future events (where `endTime >= now`).
-
-- **allEvents**:
-  - Update/delete all events with the same `seriesId`.
-
-- **Authorization check**:
-  - Only the event creator or admin can perform update/delete actions.
 
 ## ⚡ How to Run Locally
 
